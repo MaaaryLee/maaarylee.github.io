@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Test</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .test-box {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 24px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .success {
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+        }
+        
+        .flex-test {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        
+        .flex-item {
+            background: #3498db;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            min-width: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-box">
+        🎉 CSS is Working! 🎉
+    </div>
+    
+    <div class="test-box success">
+        ✅ If you see this styled box, CSS is loading correctly!
+    </div>
+    
+    <div class="flex-test">
+        <div class="flex-item">Flexbox</div>
+        <div class="flex-item">Working</div>
+        <div class="flex-item">Great!</div>
+    </div>
+    
+    <div style="text-align: center; margin-top: 30px;">
+        <p>If you see styled boxes above, your CSS is working!</p>
+        <p>If you see plain text, there's a CSS loading issue.</p>
+    </div>
+</body>
+</html>
