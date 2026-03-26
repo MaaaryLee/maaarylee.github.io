@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Personal portfolio website showcasing skills, projects, and academic background">
-    <title>Merry Li - Personal Portfolio</title>
+    <meta name="description" content="Projects and work experience - Merry (Mairui) Li's portfolio">
+    <title>Projects & Experience - Merry (Mairui) Li</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,11 +16,11 @@
         <div class="container">
             <div class="nav-content">
                 <div class="nav-brand">
-                    <a href="index.html">Merry Li</a>
+                    <a href="index.html">Merry (Mairui) Li</a>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
                 </ul>
             </div>
         </div>
@@ -30,144 +30,299 @@
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <div class="profile-photo">
-                    <img src="IMG_3707.JPG" alt="Merry Li Profile Photo">
-                </div>
                 <div class="header-text">
-                    <h1>Merry Li</h1>
-                    <p class="bio">I'm a Computer Science student with a Biomedical Engineering focus. I'm currently optimizing the firmware performance of a reinforcement learning agent for Parkinson's disease. I also have done research in machine learning, LLM, and time-series analysis. Right now, I am open to any opportunities to collaborate on research projects.</p>
+                    <h1>Projects & Experience</h1>
+                    <p class="bio">Showcasing my technical projects, research work, and professional experience in software development and data science.</p>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section with Parallax -->
-    <section class="hero-parallax">
-        <div class="parallax-bg"></div>
+    <!-- Education Section -->
+    <section class="education">
         <div class="container">
-            <div class="hero-content">
-                <h2 class="hero-title">Passionate About Technology</h2>
-                <p class="hero-subtitle">Creating innovative solutions through code and creativity</p>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">15+</span>
-                        <span class="stat-label">Projects</span>
+            <h2>Education</h2>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="education-date">
+                        <span class="year">2026</span>
+                        <span class="duration">May</span>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number">3</span>
-                        <span class="stat-label">Years Experience</span>
+                    <div class="education-content">
+                        <h3>University of North Carolina at Chapel Hill</h3>
+                        <h4>Bachelor of Science: Computer Science, Statistics</h4>
+                        <div class="achievements">
+                            <span class="achievement-tag">Full-Ride Scholarship</span>
+                            <span class="achievement-tag">Robert E. Bryn Fellowship</span>
+                            <span class="achievement-tag">Carolina Research Scholar</span>
+                        </div>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number">10+</span>
-                        <span class="stat-label">Technologies</span>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-date">
+                        <span class="year">2026</span>
+                        <span class="duration">May</span>
+                    </div>
+                    <div class="education-content">
+                        <h3>Duke University</h3>
+                        <h4>Interinstitutionally Enrolled</h4>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about">
+    <!-- Work Experience Section -->
+    <section class="experience">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p class="fade-in"> My research interests lies in the intersection of machine learning, LLM, time-series analysis, and their biomedical applications like deepp brain stimulation for Parkinson's disease, health statistics analysis for diabetes, and LLM for cognitive science's discovery.</p>
-                    
-                    <p class="fade-in"> Outside of studying, I am the president of a non-profit organization that aims to find the most effective ways to help Chinese people in United States to receive mental health easier by throwing independent research. I also care deeply about women's right in China and how to better the law system to protect them. </p>
-                </div>
-                
-                <div class="interests">
-                    <div class="interest-card">
-                        <div class="interest-icon">🎓</div>
-                        <h3>Research Interests</h3>
-                        <ul>
-                            <li>AI for Biomedical Applications</li>
-                            <li>Data Science & Machine Learning</li>
-                            <li>Systems & Architect</li>
-                            <li>Backend Engineer</li>
+            <h2>Professional Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-date">
+                        <span class="year">2025</span>
+                        <span class="duration">Aug-Present</span>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Honors Thesis | Reinforcement Learning Agent for Deep Brain Stimulation</h3>
+                        <h4>UNC Computer Science, Chapel Hill, NC</h4>
+                        <ul class="experience-details">
+                            <li>Optimized a TD3 reinforcement learning controller for closed-loop deep brain stimulation using PyTorch and TFLite.</li>
+                            <li>Reduced embedded model cost via INT8 quantization (shrinking policy storage by 56% and hidden-layer width by 53%).</li>
+                            <li>Profiled FP32 vs INT8 with scikit-learn, NumPy, and high-resolution timers, projecting 4x latency gain and 27% power reductions.</li>
+                            <li>Lowered deployment risk by adding TFLite sanity checks after exporting from PyTorch (interpreter load, op graph review, I/O dtype validation).</li>
                         </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Reinforcement Learning</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">TFLite</span>
+                            <span class="tech-tag">INT8 Quantization</span>
+                            <span class="tech-tag">Embedded Deployment</span>
+                        </div>
                     </div>
-                    
-                    <div class="interest-card">
-                        <div class="interest-icon">🌟</div>
-                        <h3>Non-Academic Interests</h3>
-                        <ul>
-                            <li>Stand-up Comedy</li>
-                            <li>Film Psychoanalysis</li>
-                            <li>Jazz Performance</li>
-                            <li>Feminism Activism</li>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-date">
+                        <span class="year">2025</span>
+                        <span class="duration">Jun-Sep</span>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Backend Engineer | AI Backend Integration</h3>
+                        <h4>Synergies Intelligent Systems, Inc., Boston, MA</h4>
+                        <ul class="experience-details">
+                            <li>Translated client feedback on LLM-generated product outputs into backend storage and workflow requirements.</li>
+                            <li>Designed PostgreSQL tables and Java backend services to store structured AI-generated information within order workflows.</li>
+                            <li>Tested and debugged controllers and middleware for CRUD endpoints using Postman, stabilizing request/response handling across core order-management operations.</li>
                         </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">PostgreSQL</span>
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Postman</span>
+                            <span class="tech-tag">CRUD Operations</span>
+                            <span class="tech-tag">LLM Workflows</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-date">
+                        <span class="year">2025</span>
+                        <span class="duration">Aug-Dec</span>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Researcher | Test-Time Adaptation for Non-Stationary Time Series</h3>
+                        <h4>UNC Statistics and Operations Research, Chapel Hill, NC</h4>
+                        <ul class="experience-details">
+                            <li>Built PyTorch models with compact Transformers and multi-scale residual TCNs for return forecasting and direction prediction under distribution shift.</li>
+                            <li>Developed test-time adaptation methods for unlabeled deployment (BN refresh, selective normalization updates, EMA-teacher self-distillation, uncertainty-triggered fallback).</li>
+                            <li>Demonstrated BN updates outperforming more complex adaptation methods, improving QQQ accuracy and Sharpe ratio on real series (SPY, QQQ).</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">Transformers</span>
+                            <span class="tech-tag">TCN</span>
+                            <span class="tech-tag">Time Series</span>
+                            <span class="tech-tag">Test-Time Adaptation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-date">
+                        <span class="year">2025</span>
+                        <span class="duration">Jan-May</span>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Researcher | Diabetes Risk Modeling with Ensemble ML Methods</h3>
+                        <h4>UNC Statistics and Operations Research, Chapel Hill, NC</h4>
+                        <ul class="experience-details">
+                            <li>Analyzed 253,680-row CDC/BRFSS survey data in Python and R to model diabetes risk and identify interpretable behavioral and health-related predictors.</li>
+                            <li>Compared logistic regression, decision trees, KNN, and Elastic Net under class imbalance using SMOTE, oversampling, and GridSearchCV.</li>
+                            <li>Used ggplot2 diagnostics and explanations to clarify screening-oriented tradeoffs; oversampled decision trees achieved &gt;99% recall with ~0.9% false negative rate.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">R</span>
+                            <span class="tech-tag">SMOTE</span>
+                            <span class="tech-tag">scikit-learn</span>
+                            <span class="tech-tag">ggplot2</span>
+                            <span class="tech-tag">Model Diagnostics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-date">
+                        <span class="year">2025</span>
+                        <span class="duration">Jan-Mar</span>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Research Assistant | LLM for Neuroscience</h3>
+                        <h4>Language, Cognition &amp; Brain Lab, UNC Psychology &amp; Neuroscience, Chapel Hill, NC</h4>
+                        <ul class="experience-details">
+                            <li>Built a GPT-based chatbot system in Python using structured prompting and controlled multi-turn workflows to evaluate LLM-delivered learning across 500 participants.</li>
+                            <li>Implemented prompt templates, rule-based dialogue branching, and response-format constraints using Python (json, re, logging), reducing off-task responses by 50-65%.</li>
+                            <li>Streamlined data preprocessing and record validation pipelines with pandas, json, and CSV to create analysis-ready datasets.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">LLM Systems</span>
+                            <span class="tech-tag">Prompt Engineering</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Data Pipelines</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-date">
+                        <span class="year">2025</span>
+                        <span class="duration">May-Jul</span>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Teaching Assistant &amp; Project Manager</h3>
+                        <h4>COMP 301 Objective Oriented Programming, UNC Computer Science, Chapel Hill, NC</h4>
+                        <ul class="experience-details">
+                            <li>Mentored 60 students across 30+ software projects through architecture reviews, Git workflows, and sprint planning, improving code quality and team delivery consistency.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">Java</span>
+                            <span class="tech-tag">Git</span>
+                            <span class="tech-tag">Architecture Reviews</span>
+                            <span class="tech-tag">Project Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-date">
+                        <span class="year">2023-24</span>
+                        <span class="duration">Oct-May</span>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Research Assistant | Neuroimaging Data Support</h3>
+                        <h4>CIRCLE Lab, UNC Psychology and Neuroscience, Chapel Hill, NC</h4>
+                        <ul class="experience-details">
+                            <li>Supported a 4-stage longitudinal brain-behavior study by assisting MRI data management, literature review, and questionnaire/behavioral interview data cleaning.</li>
+                            <li>Organized structural MRI data in FreeSurfer and supported fMRI session organization, quality control, standardized file naming, and documentation.</li>
+                            <li>Managed on-site MRI participant engagement and collected interview behavioral data using structured documentation and careful record-keeping.</li>
+                        </ul>
+                        <div class="tech-stack">
+                            <span class="tech-tag">FreeSurfer</span>
+                            <span class="tech-tag">MRI</span>
+                            <span class="tech-tag">fMRI</span>
+                            <span class="tech-tag">Data Management</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Classes Section -->
-    <section class="classes">
+    <!-- Projects Section -->
+    <section class="projects">
         <div class="container">
-            <h2>Relevant Coursework</h2>
-            <div class="courses-grid">
-                <div class="course-card">
-                    <p>CS: Deep Learning, Machine Learning, Algorithms, System Programming, Artificial Intelligence, Data Structures, Web Programming; Stats: Probability Theory, Linear Algebra, Optimization, Decision Analytics; Psyc & Neur: Biopsychology, Psychopathology, Cognitive Science, AI Ethics and Humanity</p>
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&h=250&fit=crop" alt="Deep Learning (STOR 566) - Time Series in Financial Markets">
+                    </div>
+                    <div class="project-content">
+                        <h3>Deep Learning – Time Series Analysis in Financial Markets (STOR 566)</h3>
+                        <p>Investigated deep learning architectures for financial time series forecasting, applying models to capture temporal patterns in market data. Analyzed model performance and generalization in the context of stock market prediction.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Deep Learning</span>
+                            <span class="tech-tag">Time Series</span>
+                            <span class="tech-tag">Financial Analysis</span>
+                            <span class="tech-tag">Neural Networks</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="project-files/STOR 566 DL time series in financial market study.pdf" class="project-link" target="_blank">Research Paper</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section class="skills">
-        <div class="container">
-            <h2>Technical Skills</h2>
-            <div class="skills-content">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">C</span>
-                        <span class="skill-tag">C++</span>
-                        <span class="skill-tag">HTML/CSS</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">R</span>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" alt="Machine Learning (STOR 565) - Diabetes Risk Prediction">
+                    </div>
+                    <div class="project-content">
+                        <h3>Machine Learning – Diabetes Risk Prediction (STOR 565)</h3>
+                        <p>Built models using Decision Tree, KNN, and Logistic Regression on CDC BRFSS dataset (250k+ records) to predict diabetes risk from behavioral, demographic, and physiological factors. Applied SMOTE resampling to address class imbalance, achieving 99% recall in Decision Tree model.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">scikit-learn</span>
+                            <span class="tech-tag">SMOTE</span>
+                            <span class="tech-tag">Data Analysis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="project-files/Stor_565_Final_Paper.pdf" class="project-link" target="_blank">Research Paper</a>
+                            <a href="project-files/STOR 565 Slide for Project Presentation.pdf" class="project-link" target="_blank">Slides</a>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="skill-category">
-                    <h3>Frameworks & Libraries</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Express.js</span>
-                        <span class="skill-tag">Django</span>
-                        <span class="skill-tag">Bootstrap</span>
-                        <span class="skill-tag">jQuery</span>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?w=400&h=250&fit=crop" alt="Honor Thesis - Reinforcement Learning for Deep Brain Stimulation">
+                    </div>
+                    <div class="project-content">
+                        <h3>Honor Thesis: Reinforcement Learning for Deep Brain Stimulation</h3>
+                        <p>Developing a reinforcement learning controller for closed-loop deep brain stimulation, optimizing for embedded efficiency while adapting to in-vivo neural signals for Parkinson's disease control.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Reinforcement Learning</span>
+                            <span class="tech-tag">TD3</span>
+                            <span class="tech-tag">Deep Brain Stimulation</span>
+                            <span class="tech-tag">PyTorch</span>
+                            <span class="tech-tag">TFLite</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-link">In Progress</span>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="skill-category">
-                    <h3>Tools & Technologies</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Git & GitHub</span>
-                        <span class="skill-tag">VS Code</span>
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">Postman</span>
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">IntelliJ</span>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=250&fit=crop" alt="R Statistical Analysis (STOR 320)">
                     </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3>Other Skills</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">RESTful APIs</span>
-                        <span class="skill-tag">Agile Development</span>
-                        <span class="skill-tag">UI/UX Design</span>
-                        <span class="skill-tag">Data Analysis</span>
-                        <span class="skill-tag">Technical Writing</span>
+                    <div class="project-content">
+                        <h3>R Statistical Analysis – Behavioral and Social Determinants of Diabetes (STOR 320)</h3>
+                        <p>Used Multinomial Logistic Regression with Elastic Net regularization to assess predictive power of self-reported behavioral and demographic data. Improved pre-diabetes sensitivity through upsampling, identifying AnyHealthcare and NoDocbcCost as top predictors.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">R</span>
+                            <span class="tech-tag">Statistical Analysis</span>
+                            <span class="tech-tag">Logistic Regression</span>
+                            <span class="tech-tag">Elastic Net</span>
+                            <span class="tech-tag">Healthcare Analytics</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="project-files/Final Research Paper  STOR 320.pdf" class="project-link" target="_blank">Research Paper</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -177,7 +332,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Merry Li.</p>
+            <p>&copy; 2024 Merry (Mairui) Li.</p>
         </div>
     </footer>
     <script src="script.js"></script>
