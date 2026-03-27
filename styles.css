@@ -431,6 +431,7 @@ p {
 .experience-item {
     display: flex;
     gap: 2rem;
+    align-items: flex-start;
     margin-bottom: 3rem;
     padding: 2rem;
     background: #f8f9fa;
@@ -448,6 +449,33 @@ p {
     flex-shrink: 0;
     text-align: center;
     min-width: 100px;
+}
+
+/* Side-by-side project panels next to selected experience items */
+.experience-project-mini {
+    flex-shrink: 0;
+    width: 380px;
+}
+
+.experience-project-mini .project-card--mini {
+    margin-bottom: 1.5rem;
+}
+
+.project-card--mini .project-content {
+    padding: 1rem;
+}
+
+.project-card--mini .project-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+.project-card--mini .project-links {
+    display: none;
+}
+
+.project-card--mini .project-tech {
+    margin-bottom: 0;
 }
 
 .experience-date .year {
@@ -674,6 +702,11 @@ p {
     
     .experience-date {
         margin-bottom: 1rem;
+    }
+
+    .experience-project-mini {
+        width: 100%;
+        margin-top: 1rem;
     }
     
     /* Projects responsive */
