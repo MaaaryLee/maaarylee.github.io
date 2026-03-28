@@ -122,6 +122,10 @@ p {
     line-height: 1.8;
 }
 
+.header-text .bio + .bio {
+    margin-top: 0.85rem;
+}
+
 /* About Section */
 .about {
     padding: 2rem 0;
@@ -424,20 +428,29 @@ p {
 }
 
 .experience-timeline {
-    max-width: 800px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
 .experience-item {
     display: flex;
-    gap: 2rem;
-    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.25rem;
+    align-items: stretch;
     margin-bottom: 3rem;
     padding: 2rem;
     background: #f8f9fa;
     border-radius: 12px;
     border-left: 4px solid #3498db;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-main-row {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+    width: 100%;
+    min-width: 0;
 }
 
 .experience-item:hover {
@@ -451,14 +464,26 @@ p {
     min-width: 100px;
 }
 
-/* Side-by-side project panels next to selected experience items */
+/* Project keyword cards below resume (full width row) */
 .experience-project-mini {
-    flex-shrink: 0;
-    width: 380px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: stretch;
+    padding-top: 0.25rem;
+    border-top: 1px solid #dee2e6;
 }
 
 .experience-project-mini .project-card--mini {
-    margin-bottom: 1.5rem;
+    flex: 1 1 260px;
+    max-width: 100%;
+    margin-bottom: 0;
+}
+
+.experience-content {
+    flex: 1;
+    min-width: 0;
 }
 
 .project-card--mini .project-content {
@@ -466,8 +491,13 @@ p {
 }
 
 .project-card--mini .project-content h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    line-height: 1.35;
     margin-bottom: 0.75rem;
+}
+
+.project-card--mini .project-image {
+    height: 110px;
 }
 
 .project-card--mini .project-links {
@@ -704,9 +734,18 @@ p {
         margin-bottom: 1rem;
     }
 
+    .experience-main-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .experience-content {
+        text-align: left;
+    }
+
     .experience-project-mini {
         width: 100%;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
     }
     
     /* Projects responsive */
